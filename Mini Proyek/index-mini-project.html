@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style-mini-project.css">
+    <script src="script-mini-project.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="form-card">
+            <div class="header">
+                <span class="badge">WORKSHOP 2026</span>
+                <h1>Daftar Workshop</h1>
+                <p>Isi formulir berikut untuk mendaftar.</p>
+            </div>
+
+            <form id="formWorkshop" novalidate>
+                <div class="form-group">
+                    <label for="nama">Nama lengkap</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        maxlength="50"
+                        placeholder="Masukkan nama lengkap"
+                    >
+                    <small class="counter">
+                        <span id="jumlahKarakter">0</span>/50 karakter
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="contoh@email.com"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="sesi">Pilih sesi workshop</label>
+                    <select id="sesi">
+                        <option value="">-- Pilih sesi --</option>
+                        <option value="HTML dan CSS">
+                            HTML dan CSS
+                        </option>
+                        <option value="JavaScript Dasar">
+                            JavaScript Dasar
+                        </option>
+                        <option value="Web Development">
+                            Web Development
+                        </option>
+                    </select>
+                    <small id="ringkasanSesi">
+                        Belum ada sesi dipilih.
+                    </small>
+                </div>
+
+                <div id="pesan" class="message"
+                     aria-live="polite"></div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-primary">
+                        Daftar Sekarang
+                    </button>
+                    <button type="reset" class="btn-secondary">
+                        Reset Form
+                    </button>
+                </div>
+            </form>
+
+            <p class="footer">
+                Mini Project Praktikum 6 — Pemrograman Web
+            </p>
+        </section>
+    </main>
+</body>
+</html>
